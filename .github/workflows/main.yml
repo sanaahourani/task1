@@ -25,7 +25,7 @@ jobs:
 
       - name: Run Postman Collection with Environment
         run: |
-          newman run dummyjson.postman_collection.json \
+          newman run Admin.postman_collection.json \
             -e dummyjson.postman_environment.json \
             --reporters cli,html \
             --reporter-html-export newman-report.html
